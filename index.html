@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluador de Riesgo Mecánico</title>
+</head>
+<body>
+
+  <h1>Evaluador de Riesgo Mecánico</h1>
+  <p>Agente de Mantenimiento Predictivo de Flota</p>
+  <hr>
+
+  <!-- PANTALLA 1: FORMULARIO -->
+  <h2>Pantalla 1: Datos de la Unidad</h2>
+
+  <form>
+
+    <p>
+      <label>ID de Unidad:</label><br>
+      <input type="text" placeholder="Ej. 405">
+    </p>
+
+    <p>
+      <label>Tipo de Unidad:</label><br>
+      <select>
+        <option>Seleccionar</option>
+        <option>Camión</option>
+        <option>Autobús</option>
+        <option>Vehículo de carga</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Kilometraje actual (km):</label><br>
+      <input type="number" placeholder="Ej. 150000">
+    </p>
+
+    <p>
+      <label>Tiempo de uso:</label><br>
+      <select>
+        <option>Seleccionar</option>
+        <option>Menos de 2 años</option>
+        <option>2 – 5 años</option>
+        <option>Más de 5 años</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Códigos de falla (DTC):</label><br>
+      <select>
+        <option>Sin códigos activos</option>
+        <option>Falla menor (1 código)</option>
+        <option>Falla moderada (2–3 códigos)</option>
+        <option>Falla crítica (sistema principal)</option>
+      </select>
+    </p>
+
+    <p>
+      <label>Alertas de hábitos de manejo:</label><br>
+      <select>
+        <option>Sin alertas</option>
+        <option>Leves (1–3 eventos)</option>
+        <option>Moderadas (4–9 eventos)</option>
+        <option>Altas (10+ eventos)</option>
+      </select>
+    </p>
+
+    <p>
+      <input type="submit">
+    </p>
+
+  </form>
+
+  <hr>
+
+  <!-- PANTALLA 2-->
+  <h2>Pantalla 2: Resultado del Diagnóstico</h2>
+
+  <p><strong>Unidad:</strong> 405</p>
+  <p><strong>Tipo:</strong> Camión</p>
+
+  <h3>Semaforo de Riesgo</h3>
+  <p>🔴 ROJO — Riesgo Crítico</p>
+
+  <p><strong>Riesgo Mecánico:</strong> 85%</p>
+  <p><strong>Prioridad:</strong> Alta</p>
+
+  <h3>Acción Sugerida</h3>
+  <p>INTERVENIR — Programar entrada a taller en menos de 24 horas.</p>
+
+  <h3>Justificación del Agente</h3>
+  <p>La unidad presenta falla crítica en sistema de inyección y 10 eventos de exceso de velocidad en la última semana. Intervención inmediata necesaria para evitar daño mayor al motor.</p>
+
+  <hr>
+  <a href="#">Evaluar otra unidad</a>
+
+</body>
+</html>
