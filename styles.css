@@ -14,6 +14,7 @@
       color: var(--text-dark);
       margin: 0;
       padding: 20px;
+
     }
 
     .main-container {
@@ -29,17 +30,18 @@
       margin-bottom: 20px;
     }
 
-    header h1 {
+    .header-text h1 {
       margin: 0 0 4px 0;
       font-size: 1.3rem;
       letter-spacing: 0.03em;
-    }
-
-    header p {
+   }
+ 
+    .header-text p {
       margin: 0;
       font-size: 0.85rem;
       opacity: 0.8;
-    }
+}
+ 
 
     .card {
       background: #fff;
@@ -225,3 +227,25 @@
     .link-volver:hover {
       text-decoration: underline;
     }
+
+/* FOOTER */
+footer {
+  background: var(--traxion-blue);
+  color: white;
+  border-radius: 8px;
+  padding: 16px 28px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+ 
+footer p {
+  margin: 0 0 2px 0;
+}
+ 
+.footer-right {
+  text-align: right;
+  opacity: 0.75;
+}

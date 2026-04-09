@@ -8,9 +8,11 @@
 <body>
 
 <div class="main-container">
-  <header>
-    <h1>Evaluador de Riesgo Mecánico</h1>
-    <p>Agente de Mantenimiento Predictivo de Flota</p>
+    <header>
+    <div class="header-text">
+      <h1>Evaluador de Riesgo Mecánico</h1>
+      <p>Agente de Mantenimiento Predictivo de Flota</p>
+    </div>
   </header>
 
   <!-- PANTALLA 1: FORMULARIO -->
@@ -76,25 +78,93 @@
   <hr>
 
   <!-- PANTALLA 2-->
-  <h2>Pantalla 2: Resultado del Diagnóstico</h2>
+  <div class="card">
+  <h2 class="section-title">Pantalla 2: Resultado del Diagnóstico</h2>
+  </div>
 
-  <p><strong>Unidad:</strong> 405</p>
-  <p><strong>Tipo:</strong> Camión</p>
+  <div class="diagnosis-grid">
+      <article class="diag-card border-red">
+        <div class="diag-header">
+          <span>Unidad 405</span>
+          <span class="badge bg-red">CRÍTICO</span>
+        </div>
+        <div class="diag-body">
+          <div class="progress-label">
+            <span>Riesgo Mecánico</span>
+            <span class="text-red">85%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill fill-red"></div>
+          </div>
+          <p><strong>Prioridad:</strong> Alta</p>
+          <p class="justificacion-title">Justificación del Agente</p>
+          <p>Falla crítica en sistema de inyección y 10 eventos de exceso de velocidad en la última semana.</p>
+          <div class="action-box text-red">
+            <small>ACCIÓN</small>
+            <strong>INTERVENIR — Taller en menos de 24 hrs</strong>
+          </div>
+        </div>
+      </article>
 
-  <h3>Semaforo de Riesgo</h3>
-  <p>🔴 ROJO — Riesgo Crítico</p>
+      
+      <article class="diag-card border-yellow">
+        <div class="diag-header">
+          <span>Unidad 102</span>
+          <span class="badge bg-yellow">PRECAUCIÓN</span>
+        </div>
+        <div class="diag-body">
+          <div class="progress-label">
+            <span>Riesgo Mecánico</span>
+            <span class="text-yellow">50%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill fill-yellow"></div>
+          </div>
+          <p><strong>Prioridad:</strong> Media</p>
+          <p class="justificacion-title">Justificación del Agente</p>
+          <p>Kilometraje próximo a servicio preventivo. Se detectaron frenados moderados en los últimos 7 días.</p>
+          <div class="action-box text-yellow">
+            <small>ACCIÓN</small>
+            <strong>REVISAR — Inspección en 7 días</strong>
+          </div>
+        </div>
+      </article>
 
-  <p><strong>Riesgo Mecánico:</strong> 85%</p>
-  <p><strong>Prioridad:</strong> Alta</p>
+      <article class="diag-card border-green">
+        <div class="diag-header">
+          <span>Unidad 088</span>
+          <span class="badge bg-green">ÓPTIMO</span>
+        </div>
+        <div class="diag-body">
+          <div class="progress-label">
+            <span>Riesgo Mecánico</span>
+            <span class="text-green">15%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill fill-green"></div>
+          </div>
+          <p><strong>Prioridad:</strong> Baja</p>
+          <p class="justificacion-title">Justificación del Agente</p>
+          <p>Sin alertas de telemetría. Operación estable, hábitos de conducción seguros.</p>
+          <div class="action-box text-green">
+            <small>ACCIÓN</small>
+            <strong>MANTENER — Operación normal</strong>
+          </div>
+        </div>
+      </article>
 
-  <h3>Acción Sugerida</h3>
-  <p>INTERVENIR — Programar entrada a taller en menos de 24 horas.</p>
-
-  <h3>Justificación del Agente</h3>
-  <p>La unidad presenta falla crítica en sistema de inyección y 10 eventos de exceso de velocidad en la última semana. Intervención inmediata necesaria para evitar daño mayor al motor.</p>
-
-  <hr>
-  <a href="#">Evaluar otra unidad</a>
+    </div>
+    <footer>
+    <div class="footer-left">
+      <p> Hackatón Bécalos · Traxión 2025</p>
+      <p>Eje 3 — Mantenimiento Predictivo de Flota</p>
+    </div>
+    <div class="footer-right">
+      <p>Prototipo conceptual</p>
+      <p>Agente de IA · Semáforo de Riesgo</p>
+    </div>
+  </footer>
+  </div>
 
 </body>
 </html>
