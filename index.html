@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Evaluador de Riesgo Mecánico</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Evaluador de Riesgo Mecánico</h1>
-  <p>Agente de Mantenimiento Predictivo de Flota</p>
-  <hr>
+<div class="main-container">
+  <header>
+    <h1>Evaluador de Riesgo Mecánico</h1>
+    <p>Agente de Mantenimiento Predictivo de Flota</p>
+  </header>
 
   <!-- PANTALLA 1: FORMULARIO -->
-  <h2>Pantalla 1: Datos de la Unidad</h2>
+  <div class="card">
+    <h2 class="section-title">Pantalla 1: Datos de la Unidad</h2>
+  
+    <form>
 
-  <form>
-
-    <p>
+    <div class="input-group">
       <label>ID de Unidad:</label><br>
       <input type="text" placeholder="Ej. 405">
-    </p>
+    </div>
 
-    <p>
+    <div class="input-group">
       <label>Tipo de Unidad:</label><br>
       <select>
         <option>Seleccionar</option>
@@ -28,14 +32,14 @@
         <option>Autobús</option>
         <option>Vehículo de carga</option>
       </select>
-    </p>
+    </div>
 
-    <p>
+    <div class="input-group">
       <label>Kilometraje actual (km):</label><br>
       <input type="number" placeholder="Ej. 150000">
-    </p>
+    </div>
 
-    <p>
+    <div class="input-group">
       <label>Tiempo de uso:</label><br>
       <select>
         <option>Seleccionar</option>
@@ -43,9 +47,9 @@
         <option>2 – 5 años</option>
         <option>Más de 5 años</option>
       </select>
-    </p>
+    </div>
 
-    <p>
+    <div class="input-group">
       <label>Códigos de falla (DTC):</label><br>
       <select>
         <option>Sin códigos activos</option>
@@ -53,9 +57,9 @@
         <option>Falla moderada (2–3 códigos)</option>
         <option>Falla crítica (sistema principal)</option>
       </select>
-    </p>
+    </div>
 
-    <p>
+    <div class="input-group">
       <label>Alertas de hábitos de manejo:</label><br>
       <select>
         <option>Sin alertas</option>
@@ -63,14 +67,12 @@
         <option>Moderadas (4–9 eventos)</option>
         <option>Altas (10+ eventos)</option>
       </select>
-    </p>
+    </div>
 
-    <p>
-      <input type="submit">
-    </p>
+    <button type="button" class="btn-primary" fdprocessedid="18oekq">Generar Diagnóstico con IA [cite: 119]</button>
 
   </form>
-
+  </div>
   <hr>
 
   <!-- PANTALLA 2-->
